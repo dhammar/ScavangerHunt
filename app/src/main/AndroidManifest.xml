@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sports.scavengerhunt" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".view.GameActivity"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name=".view.sports.scavengerhunt.view.fragment.JoinGameActivity"
+            android:label="@string/title_activity_join_game" >
+        </activity>
+        <activity
+            android:name=".view.JoinGameActivity"
+            android:label="@string/title_activity_join_game" >
+        </activity>
+        <activity
+            android:name=".view.LobbyActivity"
+            android:label="@string/title_activity_lobby" >
+        </activity>
+    </application>
+
+</manifest>

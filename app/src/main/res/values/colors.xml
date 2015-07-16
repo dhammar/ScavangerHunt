@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_button_blue">#318ce7</color>
+    <color name="activity_menu_create_game_background">#B0EE00</color>
+    <color name="button_green">#ff3bff3d</color>
+    <color name="button_grey">#ff848484</color>
+    <color name="button_color_yellow">#ffeecf4d</color>
+    <color name="button_color_salmon">#ffff736f</color>
+    <color name="location_heat_color_cold">#FF145AFF</color>
+    <color name="location_heat_color_cool">#ff34e3ff</color>
+    <color name="location_heat_color_neutral">#ffffff23</color>
+    <color name="location_heat_color_warm">#ffff7d1f</color>
+    <color name="location_heat_color_hot">#ffff2d2b</color>
+    <color name="location_heat_color_complete">#ff71ff79</color>
+
+</resources>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="sports.scavengerhunt.view.GameActivity"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:text="map"
+            android:background="#ffffe66f"
+            android:layout_weight=".85" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:text="info pane"
+            android:background="#ff9cc6d9"
+            android:layout_weight=".15" />
+    </LinearLayout>
+</RelativeLayout>

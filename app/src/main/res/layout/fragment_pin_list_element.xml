@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sports.scavengerhunt.view.sports.scavengerhunt.view.fragment.PinListElementFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffdedbdf"
+            android:minHeight="80dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="desc"
+                android:id="@+id/location_description_text"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_vertical_margin" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="hot"
+                android:id="@+id/location_heat_display"
+                android:background="#ff71ff79"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
