@@ -1,3 +1,9 @@
+//
+//  Example of our pull request process
+//
+//  so we can get each other's shit without getting shit from each other
+//
+
 package sports.scavengerhunt.view;
 
 import android.content.Intent;
