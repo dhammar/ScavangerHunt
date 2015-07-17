@@ -6,12 +6,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import sports.scavengerhunt.R;
+import sports.scavengerhunt.data.Session;
 
 public class GameActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_game);
     }
 

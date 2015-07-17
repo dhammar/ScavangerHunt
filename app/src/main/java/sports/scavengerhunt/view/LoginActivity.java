@@ -7,13 +7,16 @@
 package sports.scavengerhunt.view;
 
 import android.content.Intent;
+import android.content.pm.PackageInstaller;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 import sports.scavengerhunt.R;
+import sports.scavengerhunt.data.Session;
 
 public class LoginActivity extends ActionBarActivity {
 
@@ -21,6 +24,7 @@ public class LoginActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        findViewById(R.id.login_failed_alert_text).setVisibility(View.INVISIBLE);
     }
 
 
@@ -48,8 +52,15 @@ public class LoginActivity extends ActionBarActivity {
 
 
     public void attemptLogin(View v){
-        Intent loginIntent = new Intent(this, MenuActivity.class);
-        startActivity(loginIntent);
-        //TODO
+        String user = ((EditText)findViewById(R.id.login_username_text_field)).getText().toString();
+        String pw = ((EditText)findViewById(R.id.login_username_text_field)).getText().toString();
+        if(Session.authenticate(user, pw)){
+            Intent loginIntent = new Intent(this, MenuActivity.class);
+            startActivity(loginIntent);
+        } else {
+            findViewById(R.id.login_failed_alert_text).setVisibility(View.VISIBLE);
+        }
+
+
     }
 }

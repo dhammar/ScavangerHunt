@@ -10,20 +10,37 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <EditText
+        <FrameLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText"
-            android:text="map"
-            android:background="#ffffe66f"
-            android:layout_weight=".85" />
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/game_map_pane_layout"
+            android:padding="8dp"
+            android:foregroundGravity="top">
 
-        <EditText
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/editText"
+                android:text="map"
+                android:background="#ffffe66f"
+                android:layout_weight=".85" />
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText2"
-            android:text="info pane"
-            android:background="#ff9cc6d9"
-            android:layout_weight=".15" />
+            android:minHeight="80dp"
+            android:id="@+id/game_info_pane_layout"
+            android:foregroundGravity="bottom">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/editText2"
+                android:text="info pane"
+                android:background="#ff9cc6d9"
+                android:layout_weight=".15" />
+        </FrameLayout>
     </LinearLayout>
 </RelativeLayout>
