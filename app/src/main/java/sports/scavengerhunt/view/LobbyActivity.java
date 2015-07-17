@@ -1,5 +1,6 @@
 package sports.scavengerhunt.view;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,6 +19,7 @@ public class LobbyActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Session.setGame(getGameById(getIntent().getStringExtra("ID")));
         setContentView(R.layout.activity_lobby);
     }
 
@@ -51,6 +53,7 @@ public class LobbyActivity extends ActionBarActivity {
             ((Button)v).setText("Ready!");
             ((TextView)findViewById(R.id.lobby_status_text)).setText("Waiting on the others..."); //TODO resource
             fReady = true;
+            checkReadyStatus();
         } else {
             v.setBackgroundColor(getResources().getColor(R.color.button_grey));
             ((Button)v).setText("Not ready");
@@ -58,5 +61,13 @@ public class LobbyActivity extends ActionBarActivity {
             fReady = false;
         }
 
+    }
+
+    public void checkReadyStatus(){
+       if(true) { //check if all ready
+            //Session.setGame(getGameWithId());
+            Intent intent = new Intent(this, GameActivity.class);
+            startActivity(intent);
+       }
     }
 }

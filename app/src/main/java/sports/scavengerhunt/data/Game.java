@@ -33,9 +33,8 @@ public class Game {
         if(pins == null){
             pins = new ArrayList<>();
         }
-        pins.add(new Pin(latCoord, longCoord, desc));
+        pins.add(new Pin(latCoord, longCoord, desc, pins.size()));
     }
-
 
 
 

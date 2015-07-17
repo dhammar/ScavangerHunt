@@ -6,7 +6,8 @@ package sports.scavengerhunt.data;
 public class Pin {
 
     private final String LAT, LONG, DESCRIPTION;
-    public Pin(String latCoord, String longCoord, String description){
+    private int id;
+    public Pin(String latCoord, String longCoord, String description, int id){
         LAT = latCoord;
         LONG = longCoord;
         DESCRIPTION = description;
@@ -22,5 +23,13 @@ public class Pin {
 
     public String getDescription(){
         return DESCRIPTION;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getId(){
+        return id;
     }
 }
