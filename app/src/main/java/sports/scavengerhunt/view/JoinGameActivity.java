@@ -43,14 +43,15 @@ public class JoinGameActivity extends ActionBarActivity {
 
     public void validateCode(View v){
         EditText codeField = (EditText) findViewById(R.id.join_game_code_field);
-        codeField.getText(); // TODO validate
+        String id = codeField.getText().toString(); // TODO validate
         if(true){
-            joinLobby();
+            joinLobby(id);
         }
     }
 
-    private void joinLobby(){
+    private void joinLobby(String id){
         Intent intent = new Intent(this, LobbyActivity.class);
+        intent.putExtra("ID", id);
         startActivity(intent);
     }
 }

@@ -1,10 +1,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="sports.scavengerhunt.view.sports.scavengerhunt.view.fragment.PinListFragment">
+    tools:context="sports.scavengerhunt.view.fragment.PinListFragment"
+    android:minHeight="80dp">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:id="@+id/pin_list_container"></LinearLayout>
 </FrameLayout>
