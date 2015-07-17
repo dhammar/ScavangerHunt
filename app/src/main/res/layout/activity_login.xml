@@ -1,7 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="sports.scavengerhunt.view.LoginActivity"
@@ -39,8 +38,25 @@
             android:text="@string/login_button_title"
             android:onClick="attemptLogin"
             android:id="@+id/login_button"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:background="@color/default_button_blue" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="sign up"
+            android:id="@+id/login_register_button"
+            android:elegantTextHeight="false"
+            android:background="@color/button_green"
+            android:onClick="register" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:id="@+id/login_failed_alert_text"
+            android:textColor="#ffff3436"
+            android:textStyle="italic"
+            android:text="Login failed. Please try again, or sign up above."
+            android:padding="8dp" />
     </LinearLayout>
 </RelativeLayout>

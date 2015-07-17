@@ -1,4 +1,4 @@
-package sports.scavengerhunt.view.sports.scavengerhunt.view.fragment;
+package sports.scavengerhunt.view.fragment;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -90,6 +90,10 @@ public class PinListFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    public void populateList(){
+        // get pins, register to empty vertical layout
     }
 
     /**
